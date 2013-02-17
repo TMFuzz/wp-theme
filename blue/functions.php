@@ -1,0 +1,16 @@
+<?php
+   add_theme_support( 'post-thumbnails' );
+
+	if (function_exists('register_sidebar')) {
+		register_sidebar(array(
+			'name' => 'Sidebar Widgets',
+			'id'   => 'sidebar-widgets',
+			'description'   => 'Widgets for the sidebar.',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3>',
+			'after-title'   => '</h3>',
+		));
+	}
+?>
+			
